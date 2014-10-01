@@ -106,7 +106,7 @@
             (regex [[#!]\{[^\}]+\}])))
     (zone
         (start
-            (regex [^\s*(?!\w+\:)(?:(([\w]+))|(?=\.|#))]
+            (regex [^\s*(?!\w+\:)(?:(([\w-]+))|(?=\.|#))]
                 (1 meta.tag.any.jade)
                 (2 constant.name.tag.jade)))
         (end
